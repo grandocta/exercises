@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+  function displayTime()
+  {
+    var currentTime = new Date();
+    document.getElementById('time_box').innerHTML = currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
+    setTimeout(displayTime, 500);
+  }
+</script>
+</head>
+<body onload="displayTime()">
+  <div id="time_box"></div>
+</body>
+</html>
